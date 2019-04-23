@@ -1,0 +1,45 @@
+<!--================Home Banner Area =================-->
+
+<!--================End Home Banner Area =================-->
+<section class="banner_area">
+    <div class="banner_inner d-flex align-items-center">
+        <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        <div class="container">
+            <div class="banner_content text-center">
+                <div class="page_link">
+                    <a href="/">Home</a>
+                    <a href="/ticket">Ticket</a>
+                </div>
+                <h2>TICKET</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================Team Area =================-->
+<section class="team_area pad_top white_bg">
+    <div class="container">
+        <div class="main_title">
+            <h2>#OUR TICKET</h2>
+           
+        </div>
+        
+        <div class="row ">
+            {{#each tickets}}
+            <div class="col-lg-4 col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="/img/vipticket.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">{{name}}</h4>
+                        <p class="card-text">{{description}} </p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="text-left pull-right">{{price}} $</div>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        
+    </div>
+    
+</section>

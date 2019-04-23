@@ -1,0 +1,158 @@
+
+<div id="content-wrapper">
+
+    <div class="container-fluid">
+
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Tables</li>
+    </ol>
+
+    <!-- DataTables Example -->
+    <button id="button1id" name="button1id" class="btn btn-success" data-toggle="modal" data-target="#myModal" >Add Register</button>
+    <!-- DataTables Example -->
+
+    <div class="card mb-3">
+        <div class="card-header">
+            <i class="fas fa-table"></i>
+            Register Table</div>
+        <div class="card-body">
+            <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable"  width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Start date</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tfoot>
+                <tr>
+                   
+                </tr>
+                </tfoot>
+                <tbody>
+                {{#each users}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{email}}</td>
+                    <td>{{address}}</td>
+                    <td>{{phone}}</td>
+                    <td>{{createdAt}}</td>
+                    <td>
+                        <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Action
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu">                     
+                            <li><a class="dropdown-item delete-profile" data-id={{id}}>Delete</a></li>
+                            <li><a class="dropdown-item" href="#" >Update</a></li>
+                        </ul>
+                    </div>
+                    </td>
+                </tr>
+                {{/each}}
+                </tbody>
+            </table>
+            </div>
+        </div>
+        <div class="card-footer small text-muted">Updated !</div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+    <div class="card mb-3">
+        <div class="card-header">
+        <i class="fas fa-table"></i>
+        Subcribe Table</div>
+        <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+                <tr>
+                <th>Email</th>
+                <th>Date</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                <td>hthuc1998@gmail.com</td>
+                <td>2019/17/03</td>
+                </tr>
+            </tbody>
+            </table>
+            <button id="button1id" name="button1id" class="btn btn-success">Send Mail</button>
+        </div>
+        </div>
+        <div class="card-footer small text-muted">Updated!</div>
+    </div>
+    </div>
+</div>
+<!-- /.content-wrapper -->
+<div class="modal" id="myModal">
+<div class="modal-dialog">
+    <div class="modal-content">
+
+    <!-- Modal Header -->
+    <div class="modal-header">
+        <h4 class="modal-title">Add new Resgister!</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Name</label>  
+                <div class="col-md-12">
+                    <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+                
+                </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Email</label>  
+                <div class="col-md-12">
+                    <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">  
+                 </div>
+            </div>
+            
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="textinput">Phone Number</label>  
+                <div class="col-md-12">
+                    <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">  
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="passwordinput">Password </label>
+                <div class="col-md-12">
+             <input id="passwordinput" name="passwordinput" type="password" placeholder="" class="form-control input-md">
+    
+             </div>
+             <div class="form-group">
+                <label class="col-md-4 control-label" for="passwordinput">Confrim Password </label>
+                <div class="col-md-12">
+             <input id="passwordinput" name="passwordinput" type="password" placeholder="" class="form-control input-md">
+    
+             </div>
+</div>
+            
+    </div>
+
+    <!-- Modal footer -->
+    <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+    </div>
+
+    </div>
+</div>
+</div>

@@ -1,0 +1,270 @@
+<div id="content-wrapper">
+
+    <div class="container-fluid">
+
+    <!-- Breadcrumbs-->
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+        <a href="#">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Overview</li>
+    </ol>
+
+    <!-- Icon Cards-->
+    <div class="row">
+        <div class="col-xl-3 col-sm-6 mb-3">
+        <div class="card text-white bg-primary o-hidden h-100">
+            <div class="card-body">
+            <div class="card-body-icon">
+                <i class="fas fa-fw "></i>
+            </div>
+            <div class="mr-5">121 News Views!</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+            <span class="float-left">Total: 400000 Views</span>
+            <span class="float-right">
+                <i class="fas fa-angle-right"></i>
+            </span>
+            </a>
+        </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+        <div class="card text-white bg-warning o-hidden h-100">
+            <div class="card-body">
+            <div class="card-body-icon ">
+                <i class="fas fa-fw  "></i>
+            </div>
+            <div class="mr-5">29 New Register !</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+            <span class="float-left">Total: 50 Register!</span>
+            <span class="float-right">
+                <i class="fas fa-angle-right 	"></i>
+            </span>
+            </a>
+        </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+        <div class="card text-white bg-success o-hidden h-100">
+            <div class="card-body">
+            <div class="card-body-icon">
+                <i class="fas fa-fw "></i>
+            </div>
+            <div class="mr-5">21 New Subcirbe!</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+            <span class="float-left">Total: 30000 Subcriber!</span>
+            <span class="float-right">
+                <i class="fas fa-angle-right"></i>
+            </span>
+            </a>
+        </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 mb-3">
+        <div class="card text-white bg-danger o-hidden h-100">
+            <div class="card-body">
+            <div class="card-body-icon">
+                <i class="fas fa-fw "></i>
+            </div>
+            <div class="mr-5">13 New Contacts!</div>
+            </div>
+            <a class="card-footer text-white clearfix small z-1" href="#">
+            <span class="float-left">View Details</span>
+            <span class="float-right">
+                <i class="fas fa-angle-right"></i>
+            </span>
+            </a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Area Chart Example-->
+    <div class="card mb-3">
+        <div class="card-header">
+        <i class="fas fa-chart-area"></i>
+        Chart Number Register in last Week</div>
+        <div class="card-body"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+        <canvas id="myAreaChart" width="1527" height="457" style="display: block; height: 366px; width: 1222px;" class="chartjs-render-monitor"></canvas>
+        </div>
+        <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+    </div>
+
+    <!-- DataTables Example -->
+    <div class="card mb-3">
+        <div class="card-header">
+        <i class="fas fa-table"></i>
+        Register Table</div>
+        <div class="card-body">
+        <div class="table-responsive">
+            <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="dataTable_length"><label>Show <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="dataTable_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="dataTable"></label></div></div></div><div class="row"><div class="col-sm-12"><table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+            <thead>
+                <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Name: activate to sort column descending" style="width: 193px;">Name</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Email: activate to sort column ascending" style="width: 345px;">Email</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Phone Number: activate to sort column ascending" style="width: 198px;">Phone Number</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Gender: activate to sort column ascending" style="width: 209px;">Gender</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 200px;">Start date</th></tr>
+            </thead>
+            <tfoot>
+                <tr><th rowspan="1" colspan="1"></th><th rowspan="1" colspan="1"></th><th rowspan="1" colspan="1"><button id="button1id" name="button1id" class="btn btn-success" data-toggle="modal" data-target="#myModal">Add Register</button>
+                    <div class="modal" id="myModal">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                    
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                            <h4 class="modal-title">Add new Resgister!</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                    
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="textinput">Name</label>  
+                                    <div class="col-md-12">
+                                    <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+                                    
+                                    </div>
+                                </div>
+                                
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="textinput">Email</label>  
+                                    <div class="col-md-12">
+                                    <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+                                    
+                                    </div>
+                                </div>
+                                
+                                <!-- Text input-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="textinput">Phone Number</label>  
+                                    <div class="col-md-12">
+                                    <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
+                                    
+                                    </div>
+                                </div>
+                                
+                                <!-- Multiple Radios (inline) -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="radios">Gender</label>
+                                    <div class="col-md-4"> 
+                                    <label class="radio-inline" for="radios-0">
+                                        <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+                                        Nam
+                                    </label> 
+                                    <label class="radio-inline" for="radios-1">
+                                        <input type="radio" name="radios" id="radios-1" value="2">
+                                        Nữ
+                                    </label>
+                                    </div>
+                            </div>
+                    
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Add</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+                    
+                        </div>
+                        </div>
+                    </div>
+                </div></th><th rowspan="1" colspan="1"><button id="button2id" name="button2id" class="btn btn-primary">Update Register</button></th><th rowspan="1" colspan="1"> <button id="button2id" name="button2id" class="btn btn-danger">Delete Register</button></th></tr>
+            </tfoot>
+            <tbody>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+            <tr role="row" class="odd">
+                <td class="sorting_1">Arturia Pendragon</td>
+                <td>saber@great.holy.fight.com</td>
+                <td>None</td>
+                <td>Female</td>
+                <td>2011/04/25</td>
+                </tr><tr role="row" class="even">
+                <td class="sorting_1">Hoàng Văn Thức</td>
+                <td>hthuc1998@gmail.com</td>
+                <td>0917205321</td>
+                <td>Male</td>
+                <td>2011/04/25</td>
+                </tr><tr role="row" class="odd">
+                <td class="sorting_1">Hoàng Xuân Thinh</td>
+                <td>1653083@student.hcmus.edu.vn</td>
+                <td>0123456789</td>
+                <td>Male</td>
+                <td>2011/04/25</td>
+                </tr><tr role="row" class="even">
+                <td class="sorting_1">Kallen Kaslana</td>
+                <td>kallen_sakura@honkai3.org</td>
+                <td>0864297531</td>
+                <td>Female</td>
+                <td>2011/04/25</td>
+                </tr><tr role="row" class="odd">
+                <td class="sorting_1">Murata Himeko</td>
+                <td>himeko_valkyria@honkai3.org</td>
+                <td>0987654321</td>
+                <td>Female</td>
+                <td>2011/04/25</td>
+                </tr><tr role="row" class="even">
+                <td class="sorting_1">Nishimiya Shouko</td>
+                <td>shouko@koe.no.katachi.org</td>
+                <td>1122334455</td>
+                <td>Female</td>
+                <td>2011/04/25</td>
+                </tr><tr role="row" class="odd">
+                <td class="sorting_1">Trần Dũng</td>
+                <td>1653147@student.hcmus.edu.vn</td>
+                <td>0838862789</td>
+                <td>Male</td>
+                <td>2011/04/25</td>
+                </tr><tr role="row" class="even">
+                <td class="sorting_1">Yae Sakura</td>
+                <td>yaezakura@honkai3.org</td>
+                <td>None</td>
+                <td>Female</td>
+                <td>2011/04/25</td>
+                </tr><tr role="row" class="odd">
+                <td class="sorting_1">Yatogami Tohka</td>
+                <td>tohka.san@datealive.org</td>
+                <td>None</td>
+                <td>Female</td>
+                <td>2011/04/25</td>
+                </tr></tbody>
+            </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 9 of 9 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+        </div>
+        </div>
+        <div class="card-footer small text-muted">Updated !</div>
+    </div>
+
+    </div>
+    <!-- /.container-fluid -->
+    <div class="card mb-3">
+    <div class="card-header">
+        <i class="fas fa-table"></i>
+        Subcribe Table</div>
+    <div class="card-body">
+        <div class="table-responsive">
+        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+            <tr>
+                <th>Email</th>
+                <th>Date</th>
+            </tr>
+            </thead>
+        
+            <tbody>
+            <tr>
+                <td>hthuc1998@gmail.com</td>
+                <td>2019/17/03</td>
+            </tr>
+            </tbody>
+        </table>
+        <button id="button1id" name="button1id" class="btn btn-success">Send Mail</button>
+        </div>
+    </div>
+    <div class="card-footer small text-muted">Updated!</div>
+    </div>
+</div>
